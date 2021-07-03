@@ -62,7 +62,7 @@ function kmeans(arrayToProcess, numberOfClusters, accessor) {
 
   var centroidsChanged = function (oldSet, currSet) {
     // every old centroid should be found in new set, otherwise consider centroids changed
-    for (var i = 0;i <= oldSet.length; i++) {
+    for (var i = 0;i < oldSet.length; i++) {
       if (!existsIn(currSet, oldSet[i])) return true;
     }
     return false;
